@@ -19,3 +19,19 @@ Reduce the manual effort required to process insurance claims by using AI to ext
 -**Extraction accuracy:** Measure the percentage of extracted data fields that match the verified information in the source documents.
 
 -**Employee adoption:** Measure the proportion of eligible claims processed through the platform and the proportion of target users actively using it
+## MVP Scope
+
+### Included in Version 1
+
+- **Document upload:** Allow employees to upload insurance claim forms in PDF format.
+- **AI information extraction:** Extract the claimant name, policy number, incident date, and claim amount.
+- **Human review and correction:** Allow employees to review and correct extracted information before proceeding.
+- **Claim status tracking:** Show whether a claim is awaiting review, corrected, or ready for assessment.
+
+### Out of Scope for Version 1
+
+- Automatic claim approval or rejection.
+- Automated fraud detection.
+- Integration with external insurance systems.
+
+These capabilities may be considered in future releases after validating the MVP.

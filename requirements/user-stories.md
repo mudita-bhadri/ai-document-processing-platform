@@ -48,3 +48,23 @@ As an insurance claims employee, I want the platform to extract relevant informa
 5. If a field cannot be extracted, the platform indicates that the value is missing rather than inventing a value.
 6. If extraction fails or times out, the platform informs the employee and provides an option to retry.
 7. The platform does not submit the claim automatically; the employee must review the extracted information before proceeding.
+
+## US-03: Review and Correct Extracted Information
+
+**Priority:** Must have
+
+**User story**
+
+As an insurance claims employee, I want to review and correct the information extracted by AI so that the claim details are accurate before I submit them for further processing.
+
+**Acceptance criteria**
+
+1. The platform displays the extracted claim fields and their values in an editable form.
+2. The employee can correct an extracted value that is inaccurate.
+3. The employee can enter a value for a field that the AI could not extract.
+4. The platform clearly indicates which fields have no extracted value.
+5. The employee can review and edit all four fields: claimant name, policy number, incident date, and claim amount.
+6. The employee can save the reviewed information as a draft even when one or more of the four required fields are missing.
+7. If saving a draft fails, the platform informs the employee and preserves their unsaved edits so they can retry.
+8. The Submit button remains disabled until all four required fields — claimant name, policy number, incident date, and claim amount — have been provided.
+9. When the employee enters values for all four required fields, the Submit button becomes enabled.

@@ -49,22 +49,32 @@ As an insurance claims employee, I want the platform to extract relevant informa
 6. If extraction fails or times out, the platform informs the employee and provides an option to retry.
 7. The platform does not submit the claim automatically; the employee must review the extracted information before proceeding.
 
-## US-03: Review and Correct Extracted Information
+## US-03: Review, Correct and Submit a Claim
 
 **Priority:** Must have
 
 **User story**
 
-As an insurance claims employee, I want to review and correct the information extracted by AI so that the claim details are accurate before I submit them for further processing.
+As an insurance claims employee, I want to review and correct the information extracted by AI, save my progress as a draft, and submit the completed claim so that I can ensure the claim details are accurate before further processing.
 
 **Acceptance criteria**
 
-1. The platform displays the extracted claim fields and their values in an editable form.
-2. The employee can correct an extracted value that is inaccurate.
-3. The employee can enter a value for a field that the AI could not extract.
-4. The platform clearly indicates which fields have no extracted value.
-5. The employee can review and edit all four fields: claimant name, policy number, incident date, and claim amount.
-6. The employee can save the reviewed information as a draft even when one or more of the four required fields are missing.
-7. If saving a draft fails, the platform informs the employee and preserves their unsaved edits so they can retry.
-8. The Submit button remains disabled until all four required fields — claimant name, policy number, incident date, and claim amount — have been provided.
-9. When the employee enters values for all four required fields, the Submit button becomes enabled.
+1. The platform displays the four extracted claim fields — claimant name, policy number, incident date, and claim amount — in an editable form.
+2. The employee can correct inaccurate extracted values and enter values for fields that the AI could not extract.
+3. The platform clearly indicates fields for which no value was extracted.
+4. The employee can save the claim as a draft even when one or more required fields are missing.
+5. If saving a draft fails, the platform informs the employee and preserves their unsaved edits so they can retry.
+6. The Submit button remains disabled until all four required fields have been provided.
+7. The Submit button becomes enabled when all four required fields have been provided.
+8. When the employee submits a claim, the platform validates the field values against the applicable validation rules.
+9. If validation fails, the platform identifies the fields that need correction and prevents submission.
+10. If submission succeeds, the platform confirms the submission and assigns the claim a unique reference identifier.
+11. The employee can view the claim's current status within the platform.
+12. If submission fails, the platform informs the employee and allows them to retry without requiring them to re-enter the claim details.
+
+**Open questions**
+
+- What validation rules should apply to each field?
+- Which claim statuses should the MVP support?
+- Should submitted claims be editable?
+- How should the platform handle repeated submission attempts?

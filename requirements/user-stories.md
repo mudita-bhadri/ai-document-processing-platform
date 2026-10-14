@@ -70,8 +70,7 @@ As an insurance claims employee, I want to review and correct the information ex
 6. When the employee submits a claim, the platform validates the field values against the applicable validation rules.
 7. If validation fails, the platform identifies the fields that need correction and prevents submission.
 8. If submission succeeds, the platform confirms the submission and assigns the claim a unique reference identifier.
-9. The employee can view the claim's current status within the platform.
-10. If submission fails, the platform informs the employee and allows them to retry without requiring them to re-enter the claim details.
+9. If submission fails, the platform informs the employee and allows them to retry without requiring them to re-enter the claim details.
 
 **Open questions**
 

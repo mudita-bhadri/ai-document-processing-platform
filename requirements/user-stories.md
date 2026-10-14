@@ -26,3 +26,25 @@ As an insurance claims employee, I want to upload a supporting document from my 
 - Which file types should be supported?
 - What should the maximum file size be?
 - Should the platform validate whether a PDF is readable before or after uploading it?
+
+## US-02: Extract Information Using AI
+
+**Priority:** Must have
+
+**User story**
+
+As an insurance claims employee, I want the platform to extract relevant information from my uploaded document so that I can review the details without entering everything manually.
+
+**Acceptance criteria**
+
+1. The employee must confirm the uploaded document before AI extraction begins.
+2. After confirmation, the platform starts extracting the relevant claim information.
+3. The platform extracts the following fields where the information is available:
+   - Claimant name
+   - Policy number
+   - Incident date
+   - Claim amount
+4. The platform displays the extracted values for the employee to review.
+5. If a field cannot be extracted, the platform indicates that the value is missing rather than inventing a value.
+6. If extraction fails or times out, the platform informs the employee and provides an option to retry.
+7. The platform does not submit the claim automatically; the employee must review the extracted information before proceeding.

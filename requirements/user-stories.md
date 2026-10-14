@@ -46,7 +46,7 @@ As an insurance claims employee, I want the platform to extract relevant informa
    - Claim amount
 4. The platform displays the extracted values for the employee to review.
 5. If a field cannot be extracted, the platform indicates that the value is missing rather than inventing a value.
-6. If extraction fails or times out, the platform informs the employee and provides an option to retry.
+6. If AI extraction fails, the platform informs the employee, retains the uploaded document and allows them to retry extraction without uploading the document again.
 7. The platform does not submit the claim automatically; the employee must review the extracted information before proceeding.
 
 **Open Questions**

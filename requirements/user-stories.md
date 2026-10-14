@@ -49,6 +49,9 @@ As an insurance claims employee, I want the platform to extract relevant informa
 6. If extraction fails or times out, the platform informs the employee and provides an option to retry.
 7. The platform does not submit the claim automatically; the employee must review the extracted information before proceeding.
 
+**Open Questions**
+- Should the employee be able to retry extraction, or should they be able to proceed directly to manual entry when extraction fails?
+
 ## US-03: Review, Correct and Submit a Claim
 
 **Priority:** Must have

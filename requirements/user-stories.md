@@ -16,8 +16,10 @@ As an insurance claims employee, I want to upload a supporting document from my 
 2. The platform validates the selected file before uploading it.
 3. If the file exceeds the configured maximum size, the platform displays a clear error message and does not begin uploading it.
 4. The employee cannot proceed with an invalid file.
-5. When the upload succeeds, the platform confirms the upload and displays the filename.
-6. If the upload fails, the platform displays an informative error message and allows the employee to try again.
+5. The platform checks whether the uploaded document is readable and can be processed.
+6. If the document is corrupted or cannot be opened, the platform displays a clear error message, does not start AI extraction and allows the employee to upload a replacement document.
+7. When the upload succeeds, the platform confirms the upload and displays the filename.
+8. If the upload fails, the platform displays an informative error message and allows the employee to try again.
 
 **Open questions**
 
